@@ -1,0 +1,39 @@
+{
+  "name": "exam-schedule-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Exam Schedule Management System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "create-admin": "node scripts/createAdmin.js",
+    "reset-admin-password": "node scripts/resetAdminPassword.js",
+    "reset-password": "node scripts/resetPassword.js",
+    "fix-staff-pref-indexes": "node scripts/fixStaffPreferenceIndexes.js"
+  },
+  "keywords": [
+    "exam",
+    "schedule",
+    "management"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "firebase-admin": "^12.0.1",
+    "google-auth-library": "^9.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.6.3",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.7",
+    "otp-generator": "^4.0.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
